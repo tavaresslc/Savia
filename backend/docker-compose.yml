@@ -1,0 +1,9 @@
+services:
+  mysql:
+    container_name: 'savia'
+    image: 'mysql:latest'
+    environment:
+      - MYSQL_DATABASE=savia
+      - MYSQL_ROOT_PASSWORD=262056
+    ports:
+      - '3306:3306'
